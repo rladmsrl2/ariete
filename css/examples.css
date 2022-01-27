@@ -1,0 +1,563 @@
+@font-face {
+	font-family: 'BinggraeSamanco-Bold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+body{
+	font-family: 'BinggraeSamanco-Bold';
+	font-size: 15px;
+	line-height: 24px;
+	color: #000;
+}
+
+/* menu */
+#menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	background-color: #ffffff;
+	/*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);*/
+}
+#menu ul{
+	width: 1320px;
+	margin: auto;
+}
+#menu li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+#menu li a{
+	display: block;
+	padding: 29.5px 0;
+	font-size: 42px;
+	color: #291500;
+}
+#menu li a:hover{
+	color: #a90c29;
+}
+#menu li .menu_nav1:hover{
+	background: url(../images/nav-menu.png) no-repeat center 80%;
+}
+#menu li a:hover{
+	background: url(../images/nav-menu2.png) no-repeat center 80%;
+}
+#menu ul li img{
+	padding: 18px 0px;
+}
+
+.fp-viewing-anchor1 #menu{
+	display: none;
+}
+.fp-viewing-anchor1 .top{
+	display: none;
+}
+
+/*header*/
+#header{
+	width: 1320px;
+	margin: auto;
+	position: relative;
+}
+.header_inner h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.header_inner h2{
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translate(-50%,-50%);
+}
+
+/*icon_top 버튼 시작*/
+.top .icon_top{
+	background-color: #fac3cc;
+	z-index: 99;
+	position:fixed; bottom:50px; right:50px; 
+	border-radius: 50%;
+	padding: 12px 15px;
+}
+	
+.top .icon_top:hover{
+	background-color: #ef5f97;
+}
+/*icon_top 버튼 끝*/
+
+
+/* section1 */
+#section1{
+	background-color: #ffffff;
+	text-align: center;
+}
+
+/* section2 배너*/
+#section2{
+	position: relative;
+	text-align: center;
+}
+#slide1{
+	background: url(../images/2-banner1-bg.jpg) no-repeat center top;
+	background-size: cover; /*높이 백그라운드 커버로 해놓으면 이미지가 화면에 꽉참*/
+}/*배너1 백그라운드*/
+
+#slide1 h3{
+	position: absolute;
+	top: 88.3%;
+	left: 43.5%;
+	transform: translate(-50%,-50%);
+}/*배너1 양 그림자*/
+
+#slide1 h1{
+	position: absolute;
+	top: 75%;
+	left: 43%;
+	transform: translate(-50%,-50%);
+}/*배너1 양위치*/
+
+#section2 .fp-tableCell div{
+	width: 1320px;
+	margin: auto;
+	position: relative;
+}/*슬라이드안에 div 1320기준으로 너비 100%*/
+
+#slide1 h2 img{
+	width: 100%;
+}/*슬라이드안에 div 1320기준으로 너비100프로 창줄어들면 축소 커피이미지*/
+#slide1 h1 img{
+	width: 100%;
+}/*양이미지*/
+#slide1 h3 img{
+	width: 100%;
+}/*양그림자*/
+
+/*배너2*/
+#slide2{
+	background: url(../images/2-banner2.jpg) no-repeat center top;
+	background-size: cover; /*높이 백그라운드 커버로 해놓으면 이미지가 화면에 꽉참*/
+}/*배너2 백그라운드*/
+#slide2 h3{
+	position: absolute;
+	top: 87.8%;
+	left: 56.5%;
+	transform: translate(-50%,-50%);
+}/*배너2 양 그림자*/
+#slide2 h1{
+	position: absolute;
+	top: 74%;
+	left: 56.1%;
+	transform: translate(-50%,-50%);
+}/*배너2 양위치*/
+#slide2 h4{
+	position: absolute;
+	top: 54%;
+	left: 78.6%;
+	transform: translate(-50%,-50%);
+}/*배너2 커피위치*/
+
+#slide2 h2 img{
+	width: 100%;
+}/*슬라이드안에 div 1320기준으로 너비100프로 창줄어들면 축소 커피이름*/
+
+#slide2 h1 img{
+	width: 100%;
+}/*양이미지 너비맞춰서 축소확대*/
+#slide2 h3 img{
+	width: 100%;
+}/*양그림자*/
+
+
+/*배너슬라이드버튼*/
+.fp-controlArrow.fp-prev{/*왼쪽버튼*/
+	border-color: transparent; /*다른css에 잇는거 안보이게하고*/
+	width: 35px; /*버튼크기*/
+	height: 75px;
+	background: url(../images/2-left_icon.png) no-repeat center;
+}/*버튼 백그라운드로 넣기*/
+.fp-controlArrow.fp-next{/*오른쪽버튼*/
+	border-color: transparent;
+	width: 35px;
+	height: 75px;
+	background: url(../images/2-right_icon.png) no-repeat center;
+}
+.fp-controlArrow.fp-prev:hover{/*왼쪽버튼 호버*/
+	background: url(../images/2-left_icon_hover.png) no-repeat center;
+}
+.fp-controlArrow.fp-next:hover{/*오른쪽버튼 호버*/
+	background: url(../images/2-right_icon_hover.png) no-repeat center;
+}
+/*배너슬라이드버튼 끝*/
+
+
+
+/*NEW*/
+/* section3 */
+
+#section3{
+	background: url(../images/3-NEW-bg.jpg) no-repeat center top;
+	background-size: cover; /*높이 백그라운드 커버로 해놓으면 
+	이미지가 화면에 꽉참*/
+	text-align: center;
+}/*배너2 백그라운드*/
+
+#section3 .fp-tableCell div{
+	width: 1440px;
+	margin: auto;
+	position: relative;
+}/*슬라이드안에 div 1320기준으로 너비 100%*/
+#section3 h2 img{
+	width: 100%;
+	display: block;
+}/* 너비100프로 창줄어들면 축소 커피이름*/
+#section3 h4{
+	position: absolute;
+	top: 60.5%;
+	left: 68%;
+	transform: translate(-50%,-50%);
+}/*NEW 커피위치*/
+#section3 h3{
+	position: absolute;
+	top: 87%;
+	left: 47.8%;
+	transform: translate(-50%,-50%);
+}/*NEW 양 그림자*/
+#section3 h1{
+	position: absolute;
+	top: 74%;
+	left: 47.3%;
+	transform: translate(-50%,-50%);
+}/*NEW 양위치*/
+#section3 .strawberry{
+	position: absolute;
+	top: 17.5%;
+	right: 5%;
+}
+/*스트로베리애니메이션*/
+@keyframes strawberry{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+#section3 .strawberry{
+	animation: strawberry 6s linear infinite; /*star 키프레임을 2s(2초동안) linear(가속도) infinite(무한반복)*/
+}
+
+/*메뉴시작 section4*/
+#section4{
+	width: 1320px;
+	margin: auto;
+	text-align: center;
+}
+#section4 .tab_nav{
+	position: relative;
+	top: 153px;/*탭위치*/
+}
+#section4 .tab_nav li{
+	float: left;
+	width: 267px;
+	height: 86px;
+}
+#section4 .tab_nav li a{
+	position: relative;
+}
+
+#section4 .tab_nav .tab01 a{
+	border-top: #fac3cc solid 7px;
+	border-left: #fac3cc solid 7px;
+	border-right: #fac3cc solid 7px;
+	background: #fac3cc;
+	border-radius: 30px 30px 0px 0px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	display: block;
+	z-index: 3;
+}
+#section4 .tab_nav .tab02 a{
+	border-top: #ebaeb8 solid 7px;
+	border-left: #ebaeb8 solid 7px;
+	border-right: #ebaeb8 solid 7px;
+	border-radius: 30px 30px 0px 0px;
+	background-color: #ebaeb8;
+	display: block;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	z-index: 2;
+}
+#section4 .tab_nav .tab03 a{
+	border-top: #da8694 solid 7px;
+	border-left: #da8694 solid 7px;
+	border-right: #da8694 solid 7px;
+	border-radius: 30px 30px 0px 0px;
+	background-color: #da8694;
+	display: block;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+#section4 .tab_nav li a.active{
+	background-color: #ffffff;
+	color: #ee312c;
+	text-decoration: underline;
+	z-index: 4;
+}
+#section4 .tab_nav li a{
+	font-size: 33px;
+	color: #000;
+	padding: 30px 30px;
+	display: block;
+
+}
+/*메뉴컨텐츠*/
+.tab_content{
+	padding-top: 230px;
+}/*탭이랑 위치맞춤*/
+.tab{
+	position: relative;
+}/*양기준*/
+#section4 .menu_gif{
+	position: absolute;
+	top: 8.1%;
+	right: 9.2%;
+	z-index: 10;
+}/*양이미지*/
+
+#tab01{
+	width: 1277px;
+	height: 659px;
+	border-radius: 0px 30px 30px 30px;
+	border-left: #fac3cc solid 7px;
+	border-bottom: #fac3cc solid 7px;
+	border-right: #fac3cc solid 7px;
+	border-top: #fac3cc solid 7px;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	position: relative;
+	z-index: 5;
+	display: block;
+}
+
+#tab01 .box{/*흰줄*/
+	width: 253px;
+	height: 10px;
+	position: relative;
+	top: -8px;
+	z-index: 7;
+	background-color: #ffffff;
+}
+
+/*메뉴 컨텐츠안에 겔러리1번소스*/
+.slider {
+	width: 1000px;
+	margin: 100px auto;
+}
+
+.slick-slide {
+margin: 0px 20px;
+}
+
+.slick-slide a {
+width: 33.33%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+content:'';
+}
+
+
+.slick-slide {
+transition: all ease-in-out .3s;
+opacity: 1;
+}
+
+.slick-active {
+opacity: 1;
+}
+
+.slick-current {
+opacity: 1;
+}
+.slick-slide img{
+	display: inline;
+}
+#tab01 h2, #tab02 h2, #tab03 h2{
+	height: 78px;
+	font-size: 30px;
+	line-height: 40px;
+	color: #000;
+}
+#tab01 h3, #tab02 h3, #tab03 h3{
+	font-size: 23px;
+	margin-top: 10px;
+}
+#tab01 h2 span, #tab02 h2 span, #tab03 h2 span{/*이름이 한줄인애들 가운대*/
+	display: inline-block;
+	padding-top: 20px;
+}
+.slick-track{
+	height: 465px;
+	width: 870px;
+}
+
+#tab01 .slider .slick-slide:hover{
+	transform: scale(1.03);
+}
+
+/*tab02*/
+#tab02{
+	width: 1277px;
+	height: 659px;
+	border-radius: 0px 30px 30px 30px;
+	border-left: #ebaeb8 solid 7px;
+	border-bottom: #ebaeb8 solid 7px;
+	border-right: #ebaeb8 solid 7px;
+	border-top: #ebaeb8 solid 7px;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	position: relative;
+	z-index: 5;
+	display: block;
+}
+
+#tab02 .box{/*흰줄*/
+	width: 253px;
+	height: 10px;
+	position: relative;
+	top: -8px;
+	left: 267px;
+	z-index: 7;
+	background-color: #ffffff;
+}
+#tab02 .slider .slick-slide:hover{
+	transform: scale(1.03);
+}
+
+/*tab03*/
+
+#tab03{
+	width: 1277px;
+	height: 659px;
+	border-radius: 0px 30px 30px 30px;
+	border-left: #da8694 solid 7px;
+	border-bottom: #da8694 solid 7px;
+	border-right: #da8694 solid 7px;
+	border-top: #da8694 solid 7px;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	position: relative;
+	z-index: 5;
+	display: block;
+}
+
+#tab03 .box{/*흰줄*/
+	width: 253px;
+	height: 10px;
+	position: relative;
+	top: -8px;
+	left: 534px;
+	z-index: 7;
+	background-color: #ffffff;
+}
+#tab03 .slider .slick-slide:hover{
+	transform: scale(1.03);
+}
+
+
+/*이동버튼 꾸미기*/
+.slick-prev, .slick-next{
+width:39px;
+height:39px;
+}
+.slick-prev{
+background:url(../images/4-left_icon.png) no-repeat;
+left:-70px;
+}
+.slick-prev:hover{
+background:url(../images/4-left_icon_hover.png) no-repeat;
+}
+.slick-next{
+background:url(../images/4-right_icon.png) no-repeat;
+right:-70px;
+}
+.slick-next:hover{
+background:url(../images/4-right_icon_hover.png) no-repeat;
+}
+/*겔러리1번소스 끝*/
+
+
+/*section5 ABOUT*/
+#section5{
+	background: url(../images/5-ABOUT_bg.png) no-repeat center top;
+	background-size: cover; /*높이 백그라운드 커버로 해놓으면 
+	이미지가 화면에 꽉참*/
+}
+#section5 .section5_inner{
+	width: 1320px;
+	margin: auto;
+	position: relative;
+}
+#section5 .section5_img1{
+	border-top: #291500 solid 7px;
+	border-bottom: #291500 solid 7px;
+	border-right: #291500 solid 7px;
+	border-radius: 0px 30px 30px 0px;
+	margin-top: 150px;
+	width: 1160px;
+	height: 710px;
+	position: relative;
+	left: -23.5%;
+}
+#section5 h3{
+	position: absolute;
+	top: 64.5%;
+	right: 0.3%;
+	transform: translate(-50%,-50%);
+	display: inline-block;
+}/*ABOUT 말풍선*/
+#section5 h1{
+	position: absolute;
+	top: 80%;
+	right: 15.62%;
+	transform: translate(-50%,-50%);
+}/*ABOUT 양위치*/
+
+#section5 h3:hover img{
+	transform: scale(1.05);
+}
+
+/*section6 ABOUT*/
+#section6{
+	background-color: #fcf2ce;
+}
+#section6 .section6_inner{
+	width: 1320px;
+	margin: auto;
+}
+
+/*section7 STORE*/
+#section7{
+	background-color: #ffffff;
+}
+#section7 .section6_inner{
+	width: 1320px;
+	margin: auto;
+}
+
+
+
+/* section8 footer*/
+#section8{
+	background-color: #333;
+	text-align: center;
+}
+.myContent{
+	height: 300px;
+}
+#section8 h1{
+	padding: 120px 0;
+}
